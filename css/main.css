@@ -1078,7 +1078,6 @@ footer .footer-links {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 50px;
-  border: 2px solid red;
 }
 
 @media screen and (max-width: 770px) {
