@@ -1,0 +1,47 @@
+// buttons 
+@import "color";
+@import "typography";
+
+@mixin primary-btn{
+    background:$white-primary;
+    padding: 10px 20px;
+    font-family: $font-raleway;
+    color: $black-primary;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: .4s;
+
+    &:hover{
+        background-color: $black-primary;
+        color: $white-primary;
+    }
+    @media screen and(max-width:400px){
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+@mixin seconday-btn{
+    background:$black-primary;
+    padding: 10px 20px;
+    font-family: $font-raleway;
+    color: $white-primary;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: .4s;
+    border: 2px solid $black-primary;
+
+    &:hover{
+        background-color: $white-primary;
+        color: $black-primary;
+        border: 2px solid $black-primary;
+
+    }
+    @media screen and(max-width:400px){
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
